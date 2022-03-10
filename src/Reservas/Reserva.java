@@ -4,7 +4,6 @@ package Reservas;
 public class Reserva {
 
     private Hospede hospede;
-    private int quarto;
     private String data;
     protected int numerosDeDias;
     protected double valorDaDiaria;
@@ -22,14 +21,6 @@ public class Reserva {
 
     public void setHospede(Hospede hospede) {
         this.hospede = hospede;
-    }
-
-    public int getQuarto() {
-        return quarto;
-    }
-
-    public void setQuarto(int quarto) {
-        this.quarto = quarto;
     }
 
     public String getData() {

@@ -1,13 +1,16 @@
 package Reservas;
 
 
+import java.time.LocalDate;
+
 public class Hospede {
 
     private String nome;
     private String CPF;
-    private String dataDeNascimento;
+    LocalDate dataDeNascimento;
 
     //Criar método para cadastrar hóspede
+
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -17,7 +20,7 @@ public class Hospede {
         this.CPF = CPF;
     }
 
-    public void setDataDeNascimento(String dataDeNascimento) {
+    public void setDataDeNascimento(LocalDate dataDeNascimento) {
         this.dataDeNascimento = dataDeNascimento;
     }
 
@@ -26,7 +29,7 @@ public class Hospede {
         return "Hospede{" +
                 "nome='" + nome + '\'' +
                 ", CPF='" + CPF + '\'' +
-                ", dataDeNascimento='" + dataDeNascimento + '\'' +
+                ", dataDeNascimento=" + dataDeNascimento +
                 '}';
     }
 }
